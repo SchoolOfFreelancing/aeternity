@@ -3018,11 +3018,11 @@ components:
     Currency:
       type: object
       properties:
-        long_name:
+        name:
           type: string
-        short_name:
+        symbol:
           type: string
-        smallest_denomination:
+        subunit:
           type: string
         subunits_per_unit:
           $ref: "#/components/schemas/UInt64"
@@ -3034,16 +3034,16 @@ components:
           type: string
         secondary_colour:
           type: string
-        network_id:
+        network_name:
           type: string
       required:
-        - long_name
-        - short_name
-        - smallest_denomination
+        - name
+        - symbol
+        - subunit
         - subunits_per_unit
         - primary_colour
         - secondary_colour
-        - network_id
+        - network_name
     Image:
       type: object
       properties:
